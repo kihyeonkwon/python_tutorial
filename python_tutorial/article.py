@@ -1,19 +1,19 @@
 class User:
-    name = ''
+    name = ""
     age = 0
 
-    def __init__(self, name=name, age = age):
+    def __init__(self, name=name, age=age):
         self.name = name
         self.age = age
 
 
 class Review:
-    title = ''
-    content = ''
-    user = ''
+    title = ""
+    content = ""
+    user = ""
 
     def __init__(self, content=content, title=title, user=user):
-        self.content = content 
+        self.content = content
         self.title = title
         self.user = user
 

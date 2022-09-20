@@ -2,16 +2,17 @@
 import jwt
 import datetime
 
-SECRET_KEY = 'SPARTA'
+SECRET_KEY = "SPARTA"
 
-payload ={'id': 'kihyeon',
-'exp': datetime.datetime.utcnow() + datetime.timedelta(seconds=1800) }
-token = jwt.encode(payload, SECRET_KEY, algorithm='HS256')
+payload = {
+    "id": "kihyeon",
+    "exp": datetime.datetime.utcnow() + datetime.timedelta(seconds=1800),
+}
+token = jwt.encode(payload, SECRET_KEY, algorithm="HS256")
 
 print(token)
 
-#위에까지가 로그인
+# 위에까지가 로그인
 
-decoded_token = jwt.decode(token, SECRET_KEY, algorithms=['HS256'])
+decoded_token = jwt.decode(token, SECRET_KEY, algorithms=["HS256"])
 print(decoded_token)
-

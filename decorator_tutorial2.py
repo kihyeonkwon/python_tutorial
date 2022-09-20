@@ -3,6 +3,7 @@ def wrapper_function(func):
         print("함수 이전에 실행")
         func()
         print("함수 이후에 실행")
+
     return decorated_function
 
 

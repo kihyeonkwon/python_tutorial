@@ -1,10 +1,10 @@
 class Review:
-    title = ''
-    content = ''
-    user = ''
+    title = ""
+    content = ""
+    user = ""
 
     def __init__(self, content=content, title=title, user=user):
-        self.content = content 
+        self.content = content
         self.title = title
         self.user = user
 

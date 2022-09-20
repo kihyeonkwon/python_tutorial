@@ -17,8 +17,8 @@ class Person:
         return age > 18
 
 
-person1 = Person('mayank', 21)
-person2 = Person.fromBirthYear('mayank', 1996)
+person1 = Person("mayank", 21)
+person2 = Person.fromBirthYear("mayank", 1996)
 
 print(person1.age)
 print(person2.age)

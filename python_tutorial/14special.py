@@ -6,7 +6,11 @@ class Book:
         self.pages = pages
 
     def __str__(self):
-        return "Title: %s, author: %s, pages: %s" %(self.title, self.author, self.pages)
+        return "Title: %s, author: %s, pages: %s" % (
+            self.title,
+            self.author,
+            self.pages,
+        )
 
     def __len__(self):
         return self.pages
@@ -17,7 +21,7 @@ class Book:
 
 book = Book("Python Rocks!", "권기현", 159)
 
-#Special Methods
+# Special Methods
 print(book)
 print(len(book))
 del book
