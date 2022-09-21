@@ -11,7 +11,7 @@ class Animal:
 
 class Dog(Animal):
     def __init__(self):
-        Animal.__init__(self)
+        super().__init__()
         print("Dog created")
 
     def whoAmI(self):
@@ -19,3 +19,18 @@ class Dog(Animal):
 
     def bark(self):
         print("Woof!")
+
+
+class Cat(Animal):
+    def __init__(self):
+        super().__init__()
+        print("Cat created")
+
+    def whoAmI(self):
+        print("Meow!")
+
+
+dog = Dog()
+cat = Cat()
+dog.whoAmI()
+cat.whoAmI()

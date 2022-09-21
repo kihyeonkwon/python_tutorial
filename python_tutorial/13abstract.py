@@ -12,8 +12,7 @@ class Dog(Animal):
 
 
 class Cat(Animal):
-    def speak(self):
-        return self.name + " says Meow!"
+    pass
 
 
 fido = Dog("Fido")

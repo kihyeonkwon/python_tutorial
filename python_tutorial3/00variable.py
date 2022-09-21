@@ -1,17 +1,17 @@
-# a = '세상아 안녕'
+a = '세상아 안녕'
 
-# print((hex(id(a))))
-# print(type(a))
-# print(a)
-
-
-print("8번줄")
+print((hex(id(a))))
+print(type(a))
+print(a)
 
 
-TC = int(input())
+# print("8번줄")
 
-for i in range(len(a)):
-    print(a[i])
+
+# TC = int(input())
+
+# for i in range(len(a)):
+#     print(a[i])
 
 # for i in a:
 #     print(i)
